@@ -1,0 +1,10 @@
+import re
+
+padrao = r'^[\w\.-]+@[\w\.-]+\.\w+$'
+emails = ['usuario@example.com', 'invalido@', 'sem_arroba.com']
+
+for email in emails:
+    if re.match(padrao, email):
+        print(f"{email} é um e-mail válido.")
+    else:
+        print(f"{email} não é um e-mail válido.")
