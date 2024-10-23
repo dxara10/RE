@@ -1,0 +1,7 @@
+import re
+
+padrao = r'\s+'
+texto = 'Python é uma linguagem de programação poderosa.'
+
+partes = re.split(padrao, texto)
+print("Partes divididas:", partes)
