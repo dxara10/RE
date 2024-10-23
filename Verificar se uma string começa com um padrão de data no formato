@@ -1,0 +1,10 @@
+import re
+
+padrao = r'^\d{2}/\d{2}/\d{4}'
+data = '25/12/2023'
+
+match = re.match(padrao, data)
+if match:
+    print("Correspondência encontrada:", match.group())
+else:
+    print("Nenhuma correspondência encontrada.")
