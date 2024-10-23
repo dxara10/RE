@@ -1,0 +1,10 @@
+import re
+
+padrao = r'\b\w{3}\b'
+texto = 'The quick brown fox'
+
+match = re.match(padrao, texto)
+if match:
+    print("Correspondência encontrada:", match.group())
+else:
+    print("Nenhuma correspondência encontrada.")
