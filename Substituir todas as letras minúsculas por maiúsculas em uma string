@@ -1,0 +1,6 @@
+import re
+
+texto = 'Python é uma linguagem de programação poderosa.'
+
+texto_modificado = re.sub(r'[a-z]', lambda x: x.group(0).upper(), texto)
+print("Texto modificado:", texto_modificado)
