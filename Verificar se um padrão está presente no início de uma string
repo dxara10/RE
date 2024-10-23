@@ -1,0 +1,9 @@
+import re
+
+padrao = r'^Python'
+texto = 'Python é uma linguagem de programação poderosa.'
+
+if re.match(padrao, texto):
+    print("O padrão está presente no início da string.")
+else:
+    print("O padrão não está presente no início da string.")
