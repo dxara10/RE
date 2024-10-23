@@ -1,0 +1,9 @@
+import re
+
+padrao = r'Python'
+texto = 'Python é uma linguagem de programação poderosa.'
+
+if re.search(padrao, texto):
+    print("Padrão encontrado na string.")
+else:
+    print("Padrão não encontrado na string.")
