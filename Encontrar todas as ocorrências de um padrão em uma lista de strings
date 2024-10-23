@@ -1,0 +1,7 @@
+import re
+
+padrao = r'\b\w{4}\b'
+lista = ['Python', 'Java', 'C++', 'JavaScript', 'PHP']
+
+ocorrencias = [string for string in lista if re.search(padrao, string)]
+print("Ocorrências encontradas na lista:", ocorrencias)
