@@ -1,0 +1,15 @@
+import re
+
+padrao = r'^\d+$'
+texto1 = '12345'
+texto2 = '123a45'
+
+if re.match(padrao, texto1):
+    print("A string contém apenas dígitos.")
+else:
+    print("A string não contém apenas dígitos.")
+
+if re.match(padrao, texto2):
+    print("A string contém apenas dígitos.")
+else:
+    print("A string não contém apenas dígitos.")
