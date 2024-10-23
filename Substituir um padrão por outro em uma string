@@ -1,0 +1,7 @@
+import re
+
+padrao = r'\b\w{4}\b'
+texto = 'Python é uma linguagem de programação poderosa.'
+
+novo_texto = re.sub(padrao, 'Java', texto)
+print("Texto modificado:", novo_texto)
