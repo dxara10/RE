@@ -1,0 +1,10 @@
+import re
+
+padrao = r'^\w+\d'
+texto = 'Python3'
+
+match = re.match(padrao, texto)
+if match:
+    print("Correspondência encontrada:", match.group())
+else:
+    print("Nenhuma correspondência encontrada.")
